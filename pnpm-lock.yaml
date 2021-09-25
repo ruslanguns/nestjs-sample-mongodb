@@ -5,6 +5,7 @@ specifiers:
   '@nestjs/common': ^8.0.0
   '@nestjs/config': ^1.0.1
   '@nestjs/core': ^8.0.0
+  '@nestjs/mapped-types': ^1.0.0
   '@nestjs/mongoose': ^8.0.1
   '@nestjs/platform-express': ^8.0.0
   '@nestjs/schematics': ^8.0.0
@@ -15,6 +16,7 @@ specifiers:
   '@types/supertest': ^2.0.11
   '@typescript-eslint/eslint-plugin': ^4.28.2
   '@typescript-eslint/parser': ^4.28.2
+  bson: ^4.5.2
   class-transformer: ^0.4.0
   class-validator: ^0.13.1
   eslint: ^7.30.0
@@ -37,8 +39,10 @@ dependencies:
   '@nestjs/common': 8.0.6_7de7ece315067f012f2001b6a7f20971
   '@nestjs/config': 1.0.1_e2399148d990aa1f9a4b6ba2ac7a5b74
   '@nestjs/core': 8.0.6_a4d6c832897073857f471f32139e452f
+  '@nestjs/mapped-types': 1.0.0_98ff46db2ce9f8b87e20a19aa1e55592
   '@nestjs/mongoose': 8.0.1_573432f8e1f40e7b37d1d3fa88a139c9
   '@nestjs/platform-express': 8.0.6_67f7e5db8827badcb202b1d38f6b1aea
+  bson: 4.5.2
   class-transformer: 0.4.0
   class-validator: 0.13.1
   mongoose: 6.0.6
@@ -832,6 +836,20 @@ packages:
       rxjs: 7.3.0
       tslib: 2.3.0
       uuid: 8.3.2
+    dev: false
+
+  /@nestjs/mapped-types/1.0.0_98ff46db2ce9f8b87e20a19aa1e55592:
+    resolution: {integrity: sha512-26AW5jHadLXtvHs+M+Agd9KZ92dDlBrmD0rORlBlvn2KvsWs4JRaKl2mUsrW7YsdZeAu3Hc4ukqyYyDdyCmMWQ==}
+    peerDependencies:
+      '@nestjs/common': ^7.0.8 || ^8.0.0
+      class-transformer: ^0.2.0 || ^0.3.0 || ^0.4.0
+      class-validator: ^0.11.1 || ^0.12.0 || ^0.13.0
+      reflect-metadata: ^0.1.12
+    dependencies:
+      '@nestjs/common': 8.0.6_7de7ece315067f012f2001b6a7f20971
+      class-transformer: 0.4.0
+      class-validator: 0.13.1
+      reflect-metadata: 0.1.13
     dev: false
 
   /@nestjs/mongoose/8.0.1_573432f8e1f40e7b37d1d3fa88a139c9:

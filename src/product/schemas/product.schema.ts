@@ -5,8 +5,11 @@ import { ShippingDetails } from '../interfaces/shipping-details.interface';
 
 export type ProductDocument = Product & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Product {
+  // @Prop({ type: String, default: this._id})
+  // id?: string;
+
   @Prop({ type: String, required: true })
   item: string;
 
